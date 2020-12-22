@@ -1,0 +1,91 @@
+# Settings
+baseurl = "https://Ba4bes.github.io/xmasexample"
+languageCode = "en-us"
+title = "Merry XMAS!"
+theme = "autophugo"
+publishDir = "docs"
+#googleAnalytics = ""
+disableKinds = ["taxonomy", "taxonomyTerm"]
+
+[Author]
+    name = "Barbara Forbes"
+    email = ""
+
+[params]
+    # Meta
+    description = "AutoPhugo - Photo Gallery on Hugo"
+    keywords = "phugo, hugo, photogallery, photoblog, hugo theme"
+    #msvalidate = ""
+    #googlesiteverification = ""
+    #thumb_width = 480
+    thumb_quality = 100
+    #full_width = 960
+    full_quality = 100
+    #column_count = 2
+    
+    # Headerbar links
+    # Do not put here too many links,
+    # it will break mobile appearance
+
+    [[params.header.links]]
+    name = "About"
+    url = "#footer"
+    icon = "fa-info-circle"    
+    
+    # Footer panel
+    
+    [params.footer.paragraph]
+    headline = "Merry XMAS!"
+    text = "And a happy new year!"
+    
+    [params.footer.social]
+    headline = "Follow me"
+
+    [[params.footer.social.links]]
+    label = "Twitter"
+    url = "https://www.twitter.com/ba4bes"
+    icon = "fa-twitter"
+
+    [[params.footer.social.links]]
+    label = "Github"
+    url = "https://www.github.com/ba4bes"
+    icon = "fa-github"
+
+    
+    # Contact form
+    
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'realEmail' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+    
+    [params.footer.contact]
+    hide = false # Set this to true if you don't want to have a contact form on your site
+    realEmail = "example@example.org"
+    headline = "Get in touch"
+    buttonText = "Send"
+    resetText = "Reset"
+    
+    # 'warning' defines error messages for invalid inputs
+    [params.footer.contact.name]
+    text = "Name *"
+    warning = "Please, enter your name"
+
+    [params.footer.contact.email]
+    text = "Email *"
+    warning = "Please, enter your email."
+
+    [params.footer.contact.message]
+    text = "Message *"
+    warning = "Please, enter your message"
+    
+    # Copyright
+    [params.footer.copyright]
+    name = "Your name"
